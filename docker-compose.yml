@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  socenet:
+    image: ${DOCKER_REGISTRY-}socenet
+    build:
+      context: .\SoceNet
+      dockerfile: Dockerfile
